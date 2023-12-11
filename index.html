@@ -196,9 +196,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#evaluasi-model" id="toc-evaluasi-model" class="nav-link" data-scroll-target="#evaluasi-model"><span class="header-section-number">1.5</span> 4. Evaluasi Model</a>
   <ul class="collapse">
   <li><a href="#akurasi-accuracy" id="toc-akurasi-accuracy" class="nav-link" data-scroll-target="#akurasi-accuracy"><span class="header-section-number">1.5.1</span> 1. Akurasi (Accuracy)</a></li>
-  <li><a href="#recall" id="toc-recall" class="nav-link" data-scroll-target="#recall"><span class="header-section-number">1.5.2</span> 2. Recall</a></li>
-  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support"><span class="header-section-number">1.5.3</span> 3. Support</a></li>
-  <li><a href="#f1--score" id="toc-f1--score" class="nav-link" data-scroll-target="#f1--score"><span class="header-section-number">1.5.4</span> 4. F1- Score</a></li>
+  <li><a href="#recall" id="toc-recall" class="nav-link" data-scroll-target="#recall"><span class="header-section-number">1.5.2</span> 2. Precission</a></li>
+  <li><a href="#recall" id="toc-recall" class="nav-link" data-scroll-target="#recall"><span class="header-section-number">1.5.3</span> 3. Recall</a></li>
+  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support"><span class="header-section-number">1.5.4</span> 4. Support</a></li>
+  <li><a href="#f1--score" id="toc-f1--score" class="nav-link" data-scroll-target="#f1--score"><span class="header-section-number">1.5.4</span> 5. F1- Score</a></li>
   <li><a href="#classification-report" id="toc-classification-report" class="nav-link" data-scroll-target="#classification-report"><span class="header-section-number">1.5.5</span> Classification Report</a></li>
   </ul></li>
   <li><a href="#deployment" id="toc-deployment" class="nav-link" data-scroll-target="#deployment"><span class="header-section-number">1.6</span> Deployment</a></li>
@@ -2907,22 +2908,24 @@ FN \ \ \ TP
 <section id="akurasi-accuracy" class="level3" data-number="1.5.1">
 <h3 data-number="1.5.1" class="anchored" data-anchor-id="akurasi-accuracy"><span class="header-section-number">1.5.1</span> 1. Akurasi (Accuracy)</h3>
 <p><span class="math inline">\(Accuracy = \frac{TP+TN}{TP+TN+FP+FN}\)</span></p>
+  
 <p>Akurasi adalah rasio prediksi benar (positif dan negatif) atau True Positif dan True Negative dibandingkan dengan total data. 2. Precission</p>
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="precission"><span class="header-section-number">1.5.2</span> 2. Precission</h3>
 <p><span class="math inline">\(Precision = \frac{TP}{TP+FP}\)</span></p>
 <p>Presisi mendefinisikan rasio dari data bernilai positif benar (True Positive) terhadap jumlah positif benar(True Positive) dan positif salah (False Positive)</p>
 </section>
 <section id="recall" class="level3" data-number="1.5.2">
-<h3 data-number="1.5.2" class="anchored" data-anchor-id="recall"><span class="header-section-number">1.5.2</span> 3. Recall</h3>
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="recall"><span class="header-section-number">1.5.3</span> 3. Recall</h3>
 <p><span class="math inline">\(Recall = \frac{TP}{TP+FN}\)</span></p>
 <p>Recall merupakan rasio prediksi benar positif dibandingkan dengan keseluruhan data yang benar-benar positif.</p>
 </section>
 <section id="support" class="level3" data-number="1.5.3">
-<h3 data-number="1.5.3" class="anchored" data-anchor-id="support"><span class="header-section-number">1.5.3</span> 4. Support</h3>
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="support"><span class="header-section-number">1.5.4</span> 4. Support</h3>
 <p><span class="math inline">\(Support = TP+FN\)</span></p>
 <p>Support adalah jumlah aktual data yang termasuk dalam setiap kelas. Semakin tinggi nilai Support, semakin banyak sampel aktual yang termasuk dalam kelas tersebut.</p>
 </section>
 <section id="f1--score" class="level3" data-number="1.5.4">
-<h3 data-number="1.5.4" class="anchored" data-anchor-id="f1--score"><span class="header-section-number">1.5.4</span> 5. F1- Score</h3>
+<h3 data-number="1.5.4" class="anchored" data-anchor-id="f1--score"><span class="header-section-number">1.5.5</span> 5. F1- Score</h3>
 <p><span class="math inline">\(F1-Score = \frac{2.TP}{2.TP+FP+FN}\)</span></p>
 <p>F1 adalah perbandingan rata-rata precsision dan recall</p>
 </section>
@@ -3255,7 +3258,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./index.html" class="pagination-link">
-        
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
